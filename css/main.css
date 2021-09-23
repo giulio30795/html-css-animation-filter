@@ -1,0 +1,114 @@
+.ex-1-square:hover{
+background: red;
+transition: background 1s;
+}
+
+.ex-2-square:active{
+    width: 100%;
+    transition: width linear 5s;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+    transition: border-radius linear 1s;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+    transition: opacity linear 1s;
+}
+
+.ex-5-square:hover{
+    width: 200px;
+    height: 200px;
+    transition: widht, height, linear 1s;
+}
+
+.ex-5-square:active{
+    width: 50px;
+    height: 50px;
+    transition: widht, height, linear 1s;
+}
+
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+.ex-7-img:hover{
+filter: grayscale(4);
+filter: sepia(10);
+transition: grayscale, linear 1s;
+transition: sepia, linear 1s;
+}
+
+.ex-8-img:hover{
+    filter: grayscale(4);
+    border-radius: 25%;
+    filter: sepia(10);
+    transition: grayscale, linear 1s;
+    transition: border-radius, linear 1s;
+    transition: sepia, linear 1s;
+    }
+
+.ex-9-img:hover{
+    filter: grayscale(4);
+    border-radius: 25%;
+    filter: sepia(10);
+    transform:scale(1.5);
+    transition: grayscale, linear 1s;
+    transition: border-radius, linear 1s;
+    transition: sepia, linear 1s;
+    transition: transform 2 linear 2s;
+}
+
+.ex-10-icon{
+    transform: rotate(0deg);
+    transition: rotate 5s;
+    animation-name: rotate1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate1{
+    0%{
+        transform: rotate(0deg);
+}
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(359deg);
+    }
+}
+
+.ex-11-icon:hover{
+    transform: rotate(0deg);
+    transition: rotate 5s;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+}
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+}
+
